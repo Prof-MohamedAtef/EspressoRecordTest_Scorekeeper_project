@@ -45,3 +45,15 @@ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
 License for the specific language governing permissions and limitations under
 the License.
+------------
+https://codelabs.developers.google.com/codelabs/android-training-espresso-for-ui-testing/index.html?index=..%2F..%2Fandroid-training#7
+steps to test using Espresso:
+1.In Android Studio, check for and install the Android Support Repository.
+2.Add dependencies to the build.gradle (Module: app) file:
+{testImplementation 'junit:junit:4.12'
+androidTestImplementation 'com.android.support.test:runner:1.0.1'
+androidTestImplementation 
+           'com.android.support.test.espresso:espresso-core:3.0.1'}
+3.Add the following instrumentation statement to the end of the defaultConfig section:
+testInstrumentationRunner 
+                "android.support.test.runner.AndroidJUnitRunner"
